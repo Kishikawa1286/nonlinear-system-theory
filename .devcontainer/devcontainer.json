@@ -2,7 +2,8 @@
 	"name": "Ubuntu",
 	"image": "jupyter/r-notebook:notebook-6.5.4",
 	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2": {}
+		"ghcr.io/devcontainers/features/common-utils:2": {},
+		"ghcr.io/eitsupi/devcontainer-features/julia:0": {}
 	},
 	"postCreateCommand": "Rscript -e \"install.packages('languageserver', repos='http://cran.us.r-project.org')\"",
 	"service": "texlive-ja",
@@ -13,7 +14,8 @@
 			"extensions": [
 				"ms-python.python",
 				"REditorSupport.r",
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				"julialang.language-julia"
 			],
 			"settings": {
 				"terminal.integrated.shell": "/bin/bash",
